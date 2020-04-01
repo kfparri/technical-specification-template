@@ -1,4 +1,4 @@
-site_name: SRS Template
+site_name: Technical Specifications Template
 plugins:
     - search
     #- pdf-export:
