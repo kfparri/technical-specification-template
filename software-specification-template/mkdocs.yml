@@ -1,0 +1,25 @@
+site_name: SRS Template
+plugins:
+    - search
+    - pdf-export:
+        combined: true
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        linenums: true
+
+theme: 
+    name: 'material'
+    palette:
+        primary: Blue
+    feature:
+        tabs: false
+
+nav:
+    - 'index.md'
+    - '1-purpose.md'
+    - '2-overall-description.md'
+    - '3-system-features.md'
+    - '4-external-interface-requirements.md'
+    - '5-nonfunctional-requirements.md'
