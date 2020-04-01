@@ -1,8 +1,8 @@
 site_name: SRS Template
 plugins:
     - search
-    - pdf-export:
-        combined: true
+    #- pdf-export:
+        #combined: true
 
 markdown_extensions:
     - admonition
@@ -18,8 +18,12 @@ theme:
 
 nav:
     - 'index.md'
-    - '1-purpose.md'
-    - '2-overall-description.md'
-    - '3-system-features.md'
-    - '4-external-interface-requirements.md'
-    - '5-nonfunctional-requirements.md'
+    - '1-summary-background.md'
+    - '2-goals.md'
+    - '3-requirements.md'
+    - '4-nonfunctional-requirements.md'
+    - '5-plan.md'
+    - '6-security-privacy-risks.md'
+    - '7-other-considerations.md'
+    - '8-milestones.md'
+    - '9-open-questions.md'
