@@ -1,4 +1,4 @@
-::@Echo Off
+@Echo Off
 :: %1 is the first parameter.  In this case, the parameter is the destination folder and is required
 
 :: Usage createnewDocument <ProjectName> <DestinationPAth>
@@ -6,10 +6,10 @@ IF %1.==. GOTO MissingParam
 IF %2.==. GOTO MissingParam
 
 :: First, copy the document files
-XCOPY software-specification-template %2\%1-specification\ /E 
-XCOPY .gitignore %2\
+XCOPY software-specification-template %2\%1\%1-specification\ /E 
+XCOPY .gitignore %2\%1
 
-pushd %2
+pushd %2\%1
 
 git init
 
@@ -20,7 +20,7 @@ Echo "Done!  Your new documentation project can be found here %1\%1-specificatio
 GOTO End
 
 :MissingParam
-    Echo Usage: createNewDocument ProjectNameDestinationPath
+    Echo Usage: createNewDocument ProjectName DestinationPath
     GOTO End
 
 :End

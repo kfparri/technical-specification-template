@@ -27,3 +27,6 @@ nav:
     - '7-other-considerations.md'
     - '8-milestones.md'
     - '9-open-questions.md'
+    - '10. Testing':
+        - Overview: '10-testing.md'
+        # Add specific tests to their own pages here
